@@ -25,8 +25,8 @@ _.range( 90000, 1000000, 5000).forEach( function(n) {
   var results = cursor.fetch();
   console.log(n, ' docs fetched.  Time used: ', (new Date().getTime() - startTime), 'ms' );
   delete results;
-  startTime = new Date().getTime();
-  var handle = cursor.observe({}); // This call takes a long time to execute.
-  console.log(n, " docs observed. Time used: ", (new Date().getTime() - startTime), "ms");
-  handle.stop();
+  //startTime = new Date().getTime();
+  //var handle = cursor.observe({}); // This call takes a long time to execute.
+  //console.log(n, " docs observed. Time used: ", (new Date().getTime() - startTime), "ms");
+  //handle.stop();
 });
